@@ -1,4 +1,4 @@
-from secret import my_username
+from Redacted_list import my_username
 
 """
 **Do NOT change the name of this function.**
@@ -10,8 +10,11 @@ This function will be called every time anyone says anything on a channel where 
 * You can have the bot respond differently to different users
 """
 def should_i_respond(user_message, user_name):
-  if "robot" in user_message:
+  print(user_message)
+  if "BOT_NOAH" in user_message:
     return True
+  elif "I didn't say you were":
+     return True
   else:
     return False
 
@@ -24,6 +27,7 @@ This function will be called every time the `should_i_respond` function returns 
 * The bot will post the returned string on the channel where the original message was sent.
 * You can have the bot respond differently to different messages and users
 """
+
 def respond(user_message, user_name):
-  return f"""you said my name!!
-  {user_message.replace("robot", user_name)}"""
+    return f"""I'M NOT ON THE LIST!!!!!
+    {user_message.replace("BOT_NOAH", user_name)}"""
