@@ -1,5 +1,5 @@
 from Redacted_list import my_username
-
+import random
 """
 **Do NOT change the name of this function.**
 
@@ -15,6 +15,22 @@ def should_i_respond(user_message, user_name):
     return True
   elif "I didn't say you were":
      return True
+  elif "calm down":
+     return True
+  elif "OKAY YOU'RE CLEARLY ON IT!!!":
+    return True
+  elif "AHHH":
+     return True
+  elif "Can you say anything else?!?":
+     return True
+  elif "THE ISLAND?!?":
+     return True
+  elif "umm ok?":
+     return True
+  elif "Bro really":
+     return True
+  elif "Care to explain the photo":
+     return True
   else:
     return False
 
@@ -29,5 +45,7 @@ This function will be called every time the `should_i_respond` function returns 
 """
 
 def respond(user_message, user_name):
-    return f"""I'M NOT ON THE LIST!!!!!
-    {user_message.replace("BOT_NOAH", user_name)}"""
+    c =["NOAH's NOT ON THE LIST", "Noah did no wrong", "Why would assume he's on it?!?", "Noah isn't like that"]
+    w = random.choice(c)
+    return w
+    {user_message.replace("BOT_NOAH", user_name)}
