@@ -81,7 +81,7 @@ def respond(user_message, user_name):
       yyy = random.choice(e)
       return yyy
    elif "Did he steal money":
-      r = [1, 2, 3, 4, 5, 6, 7]
+      r = [8, 2, 3, 4, 5, 6, 7]
       fgkj = random.choice(r)
       for i in range(fgkj-1, fgkj):
          deez = f"approximately {i} million dollars oh shi-"
