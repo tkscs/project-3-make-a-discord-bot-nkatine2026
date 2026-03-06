@@ -1,5 +1,5 @@
-from secret import my_username
-
+from Redacted_list import my_username
+import random
 """
 **Do NOT change the name of this function.**
 
@@ -10,8 +10,29 @@ This function will be called every time anyone says anything on a channel where 
 * You can have the bot respond differently to different users
 """
 def should_i_respond(user_message, user_name):
-  if "robot" in user_message:
+  print(user_message)
+  if "BOT_NOAH" in user_message:
     return True
+  elif "I didn't say you were":
+     return True
+  elif "calm down":
+     return True
+  elif "OKAY YOU'RE CLEARLY ON IT!!!":
+    return True
+  elif "AHHH":
+     return True
+  elif "Can you say antything else?":
+     return True
+  elif "THE ISLAND?!?":
+     return True
+  elif "umm ok?":
+     return True
+  elif "Bro really":
+     return True
+  elif "Care to explain the photo":
+     return True
+  elif "Did he steal money?":
+     return True
   else:
     return False
 
@@ -24,6 +45,46 @@ This function will be called every time the `should_i_respond` function returns 
 * The bot will post the returned string on the channel where the original message was sent.
 * You can have the bot respond differently to different messages and users
 """
+
 def respond(user_message, user_name):
-  return f"""you said my name!!
-  {user_message.replace("robot", user_name)}"""
+   c =["NOAH's NOT ON THE LIST", "Noah did no wrong", "Why would assume he's on it?!?", "Noah isn't like that"]
+   d = ["hahaha", "your pain feeds me", "I'm enjoying your suffering"]
+   e = ["damn you got him but you'll never find out what he did", "he is on the list but did no wrong", "He was a reporter"]
+   if "umm ok?" in user_message:
+         z = random.choice(c)
+         return z
+   elif "I didn't say you were" in user_message:
+      w = random.choice(c)
+      return w
+   elif  "calm down" in user_message:
+      l = random.choice(c)
+      return l
+   elif "OKAY YOU'RE CLEARLY ON IT!!!" in user_message:
+      y = random.choice(e)
+      return y
+   elif "Can you say antything else?" in user_message:
+      x = random.choice(d)
+      return x
+   elif "AHHH" in user_message in user_message: 
+      g = random.choice(d)
+      return g
+   elif "umm ok?" in user_message:
+      ha = random.choice(c)
+      return ha
+   elif  "Bro Really" in user_message:
+      zed = random.choice(c)
+      return zed
+   elif "Care to explain the photo" in user_message:
+      yy = random.choice(e)
+      return yy
+   elif "THE ISLAND?!?" in user_message:
+      yyy = random.choice(e)
+      return yyy
+   elif "Did he steal money":
+      r = [8, 2, 3, 4, 5, 6, 7]
+      fgkj = random.choice(r)
+      for i in range(fgkj-1, fgkj):
+         deez = f"approximately {i} million dollars oh shi-"
+         return deez
+   
+   {user_message.replace("BOT_NOAH", user_name)}
