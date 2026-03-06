@@ -31,6 +31,8 @@ def should_i_respond(user_message, user_name):
      return True
   elif "Care to explain the photo":
      return True
+  elif "Did he steal money?":
+     return True
   else:
     return False
 
@@ -47,7 +49,7 @@ This function will be called every time the `should_i_respond` function returns 
 def respond(user_message, user_name):
    c =["NOAH's NOT ON THE LIST", "Noah did no wrong", "Why would assume he's on it?!?", "Noah isn't like that"]
    d = ["hahaha", "your pain feeds me", "I'm enjoying your suffering"]
-   e = ["damn you got him", "he is on the list but did no wrong", "He was a reporter"]
+   e = ["damn you got him but you'll never find out what he did", "he is on the list but did no wrong", "He was a reporter"]
    if "umm ok?" in user_message:
          z = random.choice(c)
          return z
@@ -78,4 +80,11 @@ def respond(user_message, user_name):
    elif "THE ISLAND?!?" in user_message:
       yyy = random.choice(e)
       return yyy
+   elif "Did he steal money":
+      r = [1, 2, 3, 4, 5, 6, 7]
+      fgkj = random.choice(r)
+      for i in range(fgkj-1, fgkj):
+         deez = f"approximately {i} million dollars oh shi-"
+         return deez
+   
    {user_message.replace("BOT_NOAH", user_name)}
