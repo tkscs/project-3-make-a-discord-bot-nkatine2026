@@ -53,6 +53,9 @@ def respond(user_message, user_name):
    if "umm ok?" in user_message:
          z = random.choice(c)
          return z
+   elif "BOT_NOAH" in user_message:
+      q = random.choice(c)
+      return q
    elif "I didn't say you were" in user_message:
       w = random.choice(c)
       return w
@@ -80,7 +83,7 @@ def respond(user_message, user_name):
    elif "THE ISLAND?!?" in user_message:
       yyy = random.choice(e)
       return yyy
-   elif "Did he steal money":
+   elif "Did he steal money?":
       r = [8, 2, 3, 4, 5, 6, 7]
       fgkj = random.choice(r)
       for i in range(fgkj-1, fgkj):
